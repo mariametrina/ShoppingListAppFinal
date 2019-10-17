@@ -17,12 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var qty5: UITextField!
     
     @IBOutlet weak var stepper1: UIStepper!
-    
     @IBOutlet weak var stepper2: UIStepper!
-    
     @IBOutlet weak var stepper3: UIStepper!
     @IBOutlet weak var stepper4: UIStepper!
     @IBOutlet weak var stepper5: UIStepper!
+    
     @IBAction func stepper1Action(_ sender: Any) {
         qty1.text = String(stepper1.value)
     }
@@ -40,6 +39,8 @@ class ViewController: UIViewController {
     @IBAction func stepper5Action(_ sender: Any) {
         qty5.text = String(stepper5.value)
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
