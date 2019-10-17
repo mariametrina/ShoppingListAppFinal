@@ -23,21 +23,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var stepper5: UIStepper!
     
     @IBAction func stepper1Action(_ sender: Any) {
-        qty1.text = String(stepper1.value)
+        qty1.text = String(Int(stepper1.value))
     }
     
     @IBAction func stepper2Action(_ sender: Any) {
-        qty2.text = String(stepper2.value)
+        qty2.text = String(Int(stepper2.value))
     }
     
     @IBAction func stepper3Action(_ sender: Any) {
-        qty3.text = String(stepper3.value)
+        qty3.text = String(Int(stepper3.value))
     }
     @IBAction func stepper4Action(_ sender: Any) {
-        qty4.text = String(stepper4.value)
+        qty4.text = String(Int(stepper4.value))
     }
     @IBAction func stepper5Action(_ sender: Any) {
-        qty5.text = String(stepper5.value)
+        qty5.text = String(Int(stepper5.value))
     }
     
     
