@@ -55,11 +55,11 @@ class ViewController: UIViewController {
         item4.text = ""
         item5.text = ""
         
-        qty1.text = ""
-        qty2.text = ""
-        qty3.text = ""
-        qty4.text = ""
-        qty5.text = ""
+        qty1.text = "0"
+        qty2.text = "0"
+        qty3.text = "0"
+        qty4.text = "0"
+        qty5.text = "0"
         
         listName.text = ""
     }
