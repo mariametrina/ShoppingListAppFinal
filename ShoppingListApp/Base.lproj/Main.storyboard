@@ -84,6 +84,25 @@
                                     <action selector="stepper1Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Z8-Rt-TZG"/>
                                     <action selector="stepper2Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="jVg-rK-HMq"/>
                                     <action selector="stepper3Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ulb-gl-IFI"/>
+                                    <action selector="stepper4Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="1De-JT-NT9"/>
+                                </connections>
+                            </stepper>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fje-r6-UQF">
+                                <rect key="frame" x="195" y="433" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VSu-Ae-x6R">
+                                <rect key="frame" x="300" y="433" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepper1Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="bI9-JB-tmt"/>
+                                    <action selector="stepper2Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="fya-RF-jnk"/>
+                                    <action selector="stepper3Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="YFF-1z-t73"/>
+                                    <action selector="stepper4Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="NJF-u7-rge"/>
+                                    <action selector="stepper5Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="dwn-mp-5z8"/>
                                 </connections>
                             </stepper>
                         </subviews>
@@ -94,9 +113,13 @@
                         <outlet property="qty1" destination="OV2-AA-Iax" id="Uwx-6M-Dp8"/>
                         <outlet property="qty2" destination="OgL-3b-CLc" id="tPj-x1-AL1"/>
                         <outlet property="qty3" destination="ROp-I9-hft" id="4Ml-rF-bPx"/>
+                        <outlet property="qty4" destination="o6k-Fs-yWN" id="Rei-a8-rxV"/>
+                        <outlet property="qty5" destination="Fje-r6-UQF" id="IWE-QR-qyd"/>
                         <outlet property="stepper1" destination="xfU-1A-IKD" id="o1p-KL-IDB"/>
                         <outlet property="stepper2" destination="gIF-Ao-sR3" id="HZK-nf-i19"/>
                         <outlet property="stepper3" destination="hY5-eK-GND" id="mVt-VQ-MBH"/>
+                        <outlet property="stepper4" destination="Ckr-rf-cdI" id="dBc-hT-M3c"/>
+                        <outlet property="stepper5" destination="VSu-Ae-x6R" id="qpc-h6-4OR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
