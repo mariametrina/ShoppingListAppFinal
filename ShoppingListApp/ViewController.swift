@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var item1: UITextField!
+    @IBOutlet weak var item2: UITextField!
+    @IBOutlet weak var item3: UITextField!
+    @IBOutlet weak var item4: UITextField!
+    @IBOutlet weak var item5: UITextField!
+    
     @IBOutlet weak var qty1: UITextField!
     @IBOutlet weak var qty2: UITextField!
     @IBOutlet weak var qty3: UITextField!
@@ -21,6 +27,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var stepper3: UIStepper!
     @IBOutlet weak var stepper4: UIStepper!
     @IBOutlet weak var stepper5: UIStepper!
+    
+    @IBOutlet weak var listName: UITextField!
     
     @IBAction func stepper1Action(_ sender: Any) {
         qty1.text = String(Int(stepper1.value))
@@ -40,6 +48,21 @@ class ViewController: UIViewController {
         qty5.text = String(Int(stepper5.value))
     }
     
+    @IBAction func ClearAll(_ sender: Any) {
+        item1.text = ""
+        item2.text = ""
+        item3.text = ""
+        item4.text = ""
+        item5.text = ""
+        
+        qty1.text = ""
+        qty2.text = ""
+        qty3.text = ""
+        qty4.text = ""
+        qty5.text = ""
+        
+        listName.text = ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
